@@ -29,9 +29,58 @@ nav{
 nav a{
     text-decoration: none;
     font-size: 20px;
+    color: green;
 }
 #nav1,
 #nav2{
     display: flex;
     gap: 20px;
+}
+#gadgets{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+#gadgets a{
+text-decoration: none;
+color: green;
+}
+#worth{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+#sec1{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    width: 100%;
+}
+#first{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#prod{
+    width: 50%;
+    /* height: 10vh; */
+}
+.product{
+    display: flex;
+}
+#first img{
+    width: 20%;
+    height: 100%;
+}
+.pqt{
+    display: flex;
+    justify-content:space-around;
+    gap: 50px;
+    width: 45%;
+    margin-left: 5vw;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid black; */
 }
