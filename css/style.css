@@ -4,8 +4,8 @@
 }
 #nameser {
     display: flex;
-    justify-content: space-evenly;
-    margin: 3vh 0 3vh 0;
+    justify-content: space-around;
+    margin: 4vh;
     
 }
 #nameser p{
@@ -28,6 +28,11 @@ nav a{
     display: flex;
     gap: 20px;
 }
+#list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
 .item {
     display: flex;
     justify-content: space-around;
@@ -46,6 +51,12 @@ nav a{
 .prod img{
     width: 20%;
     height: 100%;
+    /* box-shadow: 5px 5px 10px rgba(0,0,0,0.5); */
+}
+.prod img:hover{
+    width: 40%;
+    height: 80%;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
 }
 .pqt{
     display: flex;
@@ -55,5 +66,4 @@ nav a{
     margin-left: 10vw;
     flex-direction: row;
     align-items: center;
-    /* border: 1px solid black; */
 }
