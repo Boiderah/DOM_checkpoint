@@ -8,14 +8,16 @@ items.forEach(item => {
     const increment = item.querySelector('.increment')
     const total = item.querySelector('.total')
     const quant = item.querySelector('.quant')
-    let quantity = parseInt(document.querySelector('.quantity').innerHTML)
+    let quantity = parseInt(item.querySelector('.quant').innerHTML)
 
     increment.addEventListener("click", ()=>{
         quantity++
         quant.innerHTML = quantity
-        total.innerHTML = `$${amut*quantity}`
+        total.innerHTML = `${amut*quantity}`
     })
     decrement.addEventListener('click', ()=>{
-        total.innerHTML = `$${amut*quantity}`
+        quantity--
+        quant.innerHTML = quantity
+        total.innerHTML = `${amut*quantity}`
     })
 });

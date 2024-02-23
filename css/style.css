@@ -28,11 +28,7 @@ nav a{
     display: flex;
     gap: 20px;
 }
-#list {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5vh;
-}
+.list,
 .item {
     display: flex;
     justify-content: space-around;
@@ -66,4 +62,26 @@ nav a{
     margin-left: 10vw;
     flex-direction: row;
     align-items: center;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 10vh;
+}
+.ends{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.increment{
+    background-color: green;
+    width: 2vw;
+}
+.button{
+    border: ipx solid black;
+}
+.decrement{
+    background-color: red;
+    width: 2vw;
 }
