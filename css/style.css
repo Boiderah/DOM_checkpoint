@@ -74,12 +74,13 @@ nav a{
     display: flex;
     justify-content: space-between;
 }
+.button{
+    border: 1px solid black;
+    height: 3vh;
+}
 .increment{
     background-color: green;
     width: 2vw;
-}
-.button{
-    border: ipx solid black;
 }
 .decrement{
     background-color: red;
