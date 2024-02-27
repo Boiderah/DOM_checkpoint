@@ -3,15 +3,15 @@ let items = document.querySelectorAll('.item')
 
 function calculatetotal() {
     let subtotal =document.querySelector('.Subtotal')
-    let tax =document.querySelector('.vats')
-    let grandtotal =document.querySelector('.gtotal')
+    let vats =document.querySelector('.vats')
+    let gtotal =document.querySelector('.gtotal')
     let sub=0
     items.forEach(item => {
-        const total =item.querySelector('.total')
+        const total =item.querySelector('.gtotal')
         sub+=parseFloat(total.innerHTML)
     }) 
     subtotal.innerHTML = `$${sub}`
-    grandtotal.innerHTML = `$${sub+ parseFloat(vats.innerHTML)}`
+    gtotal.innerHTML = `$${sub+ parseFloat(vats.innerHTML)}`
 }
 
 
