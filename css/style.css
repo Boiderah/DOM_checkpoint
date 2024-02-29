@@ -86,3 +86,33 @@ nav a{
     background-color: red;
     width: 2vw;
 }
+.checkout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0vh;
+}
+#Checkout{
+    /* border: 1px solid black; */
+    /* width: 50%; */
+    border-radius: 5px;
+    padding: 10px;
+    color: azure;
+    background-color: black;
+}
+#Checkout:hover{
+    background-color: rgb(70, 70, 180);
+}
+/* .footer{
+    background-color: black;
+    display: flex;
+    height: 50px;
+} */
+/* #imgfoot{
+    display: flex;
+    justify-content: center;
+} */
+/* .imgg{
+    width: 2vh;
+    height: 2vh;
+} */
