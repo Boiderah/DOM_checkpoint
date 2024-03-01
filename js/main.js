@@ -7,7 +7,7 @@ function calculatetotal() {
     let gtotal =document.querySelector('.gtotal')
     let sub=0
     items.forEach(item => {
-        const total =item.querySelector('.gtotal')
+        const total =item.querySelector('.total')
         sub+=parseFloat(total.innerHTML)
     }) 
     subtotal.innerHTML = `$${sub}`
@@ -15,7 +15,7 @@ function calculatetotal() {
 }
 
 
-
+calculatetotal()
 
 items.forEach(item => {
    
@@ -30,10 +30,12 @@ items.forEach(item => {
         quantity++
         quant.innerHTML = quantity
         total.innerHTML = `${amut*quantity}`
+        calculatetotal()
     })
     decrement.addEventListener('click', ()=>{
         quantity--
         quant.innerHTML = quantity
         total.innerHTML = `${amut*quantity}`
+        calculatetotal()
     })
 });
